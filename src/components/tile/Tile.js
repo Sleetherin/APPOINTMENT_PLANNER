@@ -2,7 +2,7 @@ import React from "react";
 
 export const Tile = (props) => {
 
-  const tile = props.contact;
+  const tile = props.item;
   console.log(tile)
   const values = Object.values(tile);
 

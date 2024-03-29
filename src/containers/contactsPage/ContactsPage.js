@@ -22,7 +22,7 @@ export const ContactsPage = (props) => {
     */
     if(duplicate === false)
     {
-      props.addContact(name,phone,email);
+      props.addContact(props.contacts, [name,phone,email]);
       setName("");
       setPhone("");
       setEmail("");
@@ -62,7 +62,7 @@ export const ContactsPage = (props) => {
       <section>
         <h2>Contacts</h2>
         <TileList
-          contacts={props.contacts}  
+          list={props.contacts}  
         />
       </section>
     </div>
